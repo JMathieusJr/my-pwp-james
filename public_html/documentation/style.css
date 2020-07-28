@@ -1,0 +1,12 @@
+.jumbotron {
+    background: darkslategrey;
+    margin: 3rem 7rem 0 7rem;
+    padding: 4rem 0 4rem 10rem;
+    display: flex;
+    flex-direction: row;
+    -webkit-border-radius: 40px 40px 40px 40px;
+}
+
+.jumbotron h1 {
+    color: white;
+}
