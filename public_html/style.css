@@ -8,7 +8,10 @@
     -webkit-border-radius: 40px 40px 40px 40px;
 }
 
-.container h1 {
+.col-6 h1 {
     color: white;
 }
 */
+.rounded {
+    border-radius:.25rem!important
+}
