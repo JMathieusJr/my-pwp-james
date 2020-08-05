@@ -1,6 +1,6 @@
 
 body {
-    background-color: #ffd5d1;
+    background-color: white;
 }
 
 nav {
@@ -8,12 +8,12 @@ nav {
 }
 
 nav :first-child {
-    color: #ffd5d1;
+    color: white;
 
 }
 
 main {
-    border-radius: 50px;
+    border-radius: 10px;
     background-image: url("documentation/images/main-background.jpg");
     background-size: cover;
     background-position: 75%;
@@ -21,23 +21,26 @@ main {
     margin: 2rem 0 4rem 0 ;
 }
 
-
 img[alt="image of jade romo standing in front of trees"] {
-
 }
 
 main div :nth-child(2) {
     text-align: center;
+    margin: 0 auto 0 0;
+}
+
+main div :first-child {
+    margin: 0 0 0 auto;
 }
 
 main div div :first-child {
-    color: #5b5954;
+    color: black;
     text-align: left;
-    padding-left: 1rem;
+    margin-left: 1rem;
 }
 
 main div div :nth-child(2) {
-    color: #5b5954;
+    color: black;
     text-align: right;
 }
 
