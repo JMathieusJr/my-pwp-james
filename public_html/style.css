@@ -1,0 +1,36 @@
+
+body {
+    background-color: #ffd5d1;
+}
+
+nav {
+    background-color: black;
+}
+
+nav :first-child {
+    color: #ffd5d1;
+
+}
+
+main {
+    border-radius: 50px;
+    background-image: url("documentation/images/main-background.jpg");
+    background-size: cover;
+    background-position: 75%;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem 0 4rem 0 ;
+}
+
+img[alt="image of jade romo standing in front of trees"] {
+
+}
+
+main div :nth-child(2) {
+    text-align: center;
+}
+
+main div div div h1 {
+    text-align: center;
+    color: black;
+}
+
