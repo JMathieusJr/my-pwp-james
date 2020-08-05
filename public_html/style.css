@@ -12,6 +12,7 @@ nav :first-child {
 
 }
 
+/*jumbotron body*/
 main {
     border-radius: 10px;
     background-image: url("documentation/images/main-background-cropped.jpg");
@@ -24,22 +25,26 @@ main {
 img[alt="image of jade romo standing in front of trees"] {
 }
 
+/*jumbotron image column*/
 main div :nth-child(2) {
     text-align: center;
     margin: 0 auto 0 0;
 }
 
+/*Mariposa Beauty column*/
 main div :first-child {
     margin: 0 0 0 auto;
 }
 
+/*Mariposa text*/
 main div div :first-child {
-    color: black;
+    color: #4b4944;
     text-align: left;
     margin-left: 1rem;
 }
 
+/*Beauty text*/
 main div div :nth-child(2) {
-    color: black;
+    color: #4b4944;
 }
 
