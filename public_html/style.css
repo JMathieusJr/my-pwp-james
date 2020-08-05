@@ -1,6 +1,6 @@
 
 body {
-    background-color: white;
+    background-color: #191919;
 }
 
 nav {
@@ -14,9 +14,9 @@ nav :first-child {
 
 main {
     border-radius: 10px;
-    background-image: url("documentation/images/main-background.jpg");
+    background-image: url("documentation/images/main-background-cropped.jpg");
     background-size: cover;
-    background-position: 75%;
+    background-position: bottom;
     padding: 2rem 2rem 2rem 2rem;
     margin: 2rem 0 4rem 0 ;
 }
@@ -41,6 +41,5 @@ main div div :first-child {
 
 main div div :nth-child(2) {
     color: black;
-    text-align: right;
 }
 
