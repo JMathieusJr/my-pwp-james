@@ -21,6 +21,7 @@ main {
     margin: 2rem 0 4rem 0 ;
 }
 
+
 img[alt="image of jade romo standing in front of trees"] {
 
 }
@@ -29,8 +30,14 @@ main div :nth-child(2) {
     text-align: center;
 }
 
-main div div div h1 {
-    text-align: center;
-    color: black;
+main div div :first-child {
+    color: #5b5954;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+main div div :nth-child(2) {
+    color: #5b5954;
+    text-align: right;
 }
 
