@@ -1,6 +1,7 @@
 
 body {
-    background-color: #191919;
+    background-color: #bdbdbd;
+    color: black;
 }
 
 nav {
@@ -16,8 +17,7 @@ nav :first-child {
 main {
     border-radius: 10px;
     background-image: url("documentation/images/main-background-cropped.jpg");
-    background-size: cover;
-    background-position: bottom;
+    background-position: left 50%;
     padding: 2rem 2rem 2rem 2rem;
     margin: 2rem 0 4rem 0 ;
 }
@@ -38,13 +38,13 @@ main div :first-child {
 
 /*Mariposa text*/
 main div div :first-child {
-    color: #4b4944;
+    color: black;
     text-align: left;
     margin-left: 1rem;
 }
 
 /*Beauty text*/
 main div div :nth-child(2) {
-    color: #4b4944;
+    color: black;
 }
 
