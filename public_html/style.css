@@ -8,26 +8,18 @@ nav {
     background-color: black;
 }
 
-/*jumbotron body*/
-main {
-    margin: 4rem 0 4rem 0;
-}
 
 #landing-wrapper {
-    border-radius: 3px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("documentation/images/main-background-cropped.jpg");
+    background-image: linear-gradient(rgba(90, 90, 90, 0.5), rgba(90, 90, 90, 0.5)), url("documentation/images/main-background-cropped.jpg");
     background-position: left 50%;
     background-size: cover;
     padding: 4rem 0 4rem 0;
 }
 
-img[alt="image of jade romo standing in front of trees"] {
-}
-
 /*jumbotron image column*/
 main div :nth-child(2) {
     text-align: center;
-    margin: 0 4rem 0 0;
+    margin: 0 2rem 0 0;
 }
 
 /*Mariposa Beauty column*/
@@ -42,7 +34,21 @@ main div div :first-child {
     margin-left: 1rem;
 }
 
-
-body section:nth-child(3){
+#about-me-row {
+    text-align: center;
 }
 
+#about-me-container {
+   padding: 5rem 0 5rem 0;
+}
+
+#portfolio-container {
+    background-image:  linear-gradient(rgba(233, 233, 233, 0.3), rgba(233, 233, 233, 0.3)),url("documentation/images/portfolio-bg.jpg");
+    background-size: cover;
+    background-position-y: 35%;
+    padding: 2rem;
+}
+
+.portfolio-img {
+    padding: 1rem 1rem 1rem 1rem;
+}
