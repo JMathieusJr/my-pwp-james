@@ -54,15 +54,33 @@ main div div :first-child {
 }
 
 #contact-form-container {
-    margin: 2rem auto 2rem auto;
+    margin: 4rem auto 4rem auto;
     align-content: center;
 }
 
 #contact-form-only {
     background-color: darkgrey;
+    border-radius: 20px;
+}
+
+.information {
+    padding: 8px 0 8px 0;
+}
+
+.form-wrapper {
+    padding: 20px 10px 20px 10px;
+}
+
+#form-button {
 }
 
 footer {
     background-color: black;
     padding: 10px 0 10px 0;
+    display: block;
+    border: white;
+}
+
+.footer-img {
+
 }
