@@ -1,6 +1,6 @@
 
 body {
-    background-color: #f2f2f2;
+    background-color: white;
     color: black;
 }
 
@@ -39,7 +39,7 @@ main div div :first-child {
 }
 
 #about-me-container {
-   padding: 5rem 0 5rem 0;
+   padding: 3rem 0 3rem 0;
 }
 
 #portfolio-container {
