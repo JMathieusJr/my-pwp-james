@@ -52,3 +52,12 @@ main div div :first-child {
 .portfolio-img {
     padding: 1rem 1rem 1rem 1rem;
 }
+
+#contact-form-container {
+    margin: 2rem auto 2rem auto;
+    align-content: center;
+}
+
+#contact-form-only {
+    background-color: darkgrey;
+}
