@@ -1,6 +1,6 @@
 
 body {
-    background-color: #bdbdbd;
+    background-color: #f2f2f2;
     color: black;
 }
 
@@ -8,18 +8,17 @@ nav {
     background-color: black;
 }
 
-nav :first-child {
-    color: white;
-
-}
-
 /*jumbotron body*/
 main {
+    margin: 4rem 0 4rem 0;
+}
+
+#landing-wrapper {
     border-radius: 10px;
-    background-image: url("documentation/images/main-background-cropped.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("documentation/images/main-background-cropped.jpg");
     background-position: left 50%;
-    padding: 2rem 2rem 2rem 2rem;
-    margin: 2rem 0 4rem 0 ;
+    background-size: cover;
+    padding: 4rem 0 4rem 0;
 }
 
 img[alt="image of jade romo standing in front of trees"] {
@@ -28,7 +27,7 @@ img[alt="image of jade romo standing in front of trees"] {
 /*jumbotron image column*/
 main div :nth-child(2) {
     text-align: center;
-    margin: 0 auto 0 0;
+    margin: 0 4rem 0 0;
 }
 
 /*Mariposa Beauty column*/
@@ -36,15 +35,14 @@ main div :first-child {
     margin: 0 0 0 auto;
 }
 
-/*Mariposa text*/
+/*Mariposa Beauty text*/
 main div div :first-child {
-    color: black;
+    color: white;
     text-align: left;
     margin-left: 1rem;
 }
 
-/*Beauty text*/
-main div div :nth-child(2) {
-    color: black;
+
+body section:nth-child(3){
 }
 
