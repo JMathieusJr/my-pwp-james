@@ -86,11 +86,7 @@ main div div :first-child {
 
 footer {
     background-color: black;
+    background-size: cover;
     padding: 10px 0 10px 0;
     display: block;
-    border: white;
-}
-
-.footer-img {
-
 }
