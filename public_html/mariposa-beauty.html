@@ -121,25 +121,24 @@
     <div class="row">
         <div id="contact-form-only" class="col-md-6">
             <div class="form-wrapper">
-                <h2>Contact Me!</h2>
+                <h2>Contact Me</h2>
                 <form>
-                    <div>
-                        <input type="text" name="name" id="name" placeholder="Name"/>
+                    <div class="information">
+                        <input class="form-control col-md-6" type="text" name="name" id="name" placeholder="Name"/>
                     </div>
 
-                    <div>
-                        <input type="email" name="email" id="email" placeholder="Email"/>
+                    <div class="information col-md-6">
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Email"/>
                     </div>
 
-                    <div>
-                        <input type="text" name="subject" id="subject" placeholder="Phone"/>
-                        <lable>Optional</lable>
+                    <div class="information">
+                        <input class="form-control col-md-6" type="text" name="subject" id="subject" placeholder="Phone-Optional"/>
                     </div>
 
-                    <div>
-                        <textarea name="message" id="message" cols="30" rows="10" maxlength="1000" placeholder="Message"></textarea>
+                    <div class="information">
+                        <textarea class="form-control col-md-8" name="message" id="message" cols="30" rows="10" maxlength="1000" placeholder="Message"></textarea>
                     </div>
-                    <button type="submit">Send!</button>
+                    <button class="btn btn-secondary" id="form-button" type="submit">Send</button>
                 </form>
             </div>
         </div>
@@ -152,10 +151,10 @@
 </section>
 
 <!--Footer-->
-<footer class="container-fluid border border-dark text-center">
-    <img src = "documentation/images/jane-doe.jpg" height = "100" width = "100"/>
-    <img src = "documentation/images/jane-doe.jpg" height = "100" width = "100"/>
-    <img src = "documentation/images/jane-doe.jpg" height = "100" width = "100"/>
+<footer class="container-md-fluid text-center">
+    <img class="footer-img" src = "documentation/images/jane-doe.jpg" height = "100" width = "100"/>
+    <img class="footer-img" src = "documentation/images/jane-doe.jpg" height = "100" width = "100"/>
+    <img class="footer-img" src = "documentation/images/jane-doe.jpg" height = "100" width = "100"/>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
