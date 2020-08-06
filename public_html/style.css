@@ -61,3 +61,8 @@ main div div :first-child {
 #contact-form-only {
     background-color: darkgrey;
 }
+
+footer {
+    background-color: black;
+    padding: 10px 0 10px 0;
+}
