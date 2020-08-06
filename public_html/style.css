@@ -13,6 +13,9 @@ nav {
     background-image: linear-gradient(rgba(90, 90, 90, 0.5), rgba(90, 90, 90, 0.5)), url("documentation/images/main-background-cropped.jpg");
     background-position: left 50%;
     background-size: cover;
+}
+
+#landing-wrapper .row {
     padding: 4rem 0 4rem 0;
 }
 
@@ -36,10 +39,12 @@ main div div :first-child {
 
 #about-me-row {
     text-align: center;
+    padding: 3rem 0 3rem 0;
+    background-size: cover;
 }
 
 #about-me-container {
-   padding: 3rem 0 3rem 0;
+
 }
 
 #portfolio-container {
@@ -64,7 +69,12 @@ main div div :first-child {
 }
 
 .information {
+
+}
+
+.form-label {
     padding: 8px 0 8px 0;
+    text-align: left;
 }
 
 .form-wrapper {
