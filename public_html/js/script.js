@@ -11,7 +11,7 @@ $(document).ready(function () {
 	 *
 	 * @author Rochelle Lewis <rlewis37@cnm.edu>
 	 **/
-	$('#contact').validate({
+	$('#contact-form').validate({
 		debug: true,
 		errorClass: 'alert alert-danger',
 		errorLabelContainer: '#output-area',
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
 		},
 		submitHandler: function (form) {
-			$("#contact").ajaxSubmit({
+			$("#contact-form").ajaxSubmit({
 				type: "POST",
 				url: $('#contact').attr('action'),
 				success: function (ajaxOutput) {
@@ -57,7 +57,7 @@ $(document).ready(function () {
 					$("#output-area").html(ajaxOutput)
 
 					if($(".alert-success").length >= 1) {
-						$("#contact")[0].reset()
+						$("#contact-form")[0].reset()
 
 					}
 
