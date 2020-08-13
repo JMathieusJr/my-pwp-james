@@ -10,22 +10,21 @@ const app = express()
 
 app.use(morgan('dev'))
 app.use(express.json())
-app.use(bodyParser.urlencoded({extend:false }))
+app.use(bodyParser.urlencoded({extended:false }))
 app.use(bodyParser.json())
 const recaptcha = new Recaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
 
 const requestValidation = [
 	check("email", "A valid email is required").isEmail().normalizeEmail(),
 	check("name", "a Valid name is required").not().isEmpty().trim().escape(),
-	check("subject").optional().trim().escape(),
+	check("phone").optional().trim().escape(),
 	check("message", "A message is required to send an email").not().isEmpty().trim().escape().isLength({max:2000})
 ]
 
 const indexRoute = express.Router()
 
 const indexRouteMiddleware = (request, response, nextFunction)  => {
-	console.log("request", request)
-	nextFunction()
+	return response.json("express server is live")
 }
 
 const handleEmailPost = function(request, response, nextFunction) {
@@ -43,12 +42,12 @@ const handleEmailPost = function(request, response, nextFunction) {
 	}
 
 	const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
-	const {email, subject, name, message} = request.body
+	const {email, phone, name, message} = request.body
 
 	const mailgunData = {
 		to: process.env.MAIL_RECIPIENT,
-		from: `Mailgun Sandbox <postmaster@${domain}>`,
-		subject: `${name} - ${email} : ${subject}`,
+		from: `Mailgun Sandbox <postmaster@${process.env.MAILGUN_DOMAIN}>`,
+		subject: `${name} - ${email} : ${phone}`,
 		text: message
 	}
 
