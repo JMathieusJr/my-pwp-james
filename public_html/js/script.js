@@ -95,3 +95,5 @@ function clickOutside(event) {
 		modal.style.display = "none";
 	}
 }
+
+
