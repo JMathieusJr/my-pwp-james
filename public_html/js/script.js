@@ -1,16 +1,5 @@
 $(document).ready(function () {
-	/**
-	 * jQuery Validate Function
-	 *
-	 * This function provides front-end validation for your form.
-	 * If all tests set up here pass, the form data is AJAX submitted
-	 * to the mailer.php file.
-	 *
-	 * Update this file as needed for your form.
-	 * All ids and name values must match up to your form here.
-	 *
-	 * @author Rochelle Lewis <rlewis37@cnm.edu>
-	 **/
+
 	$('#contact').validate({
 		debug: true,
 		errorClass: 'alert alert-danger',
@@ -70,3 +59,39 @@ $(document).ready(function () {
 	})
 
 })
+
+//get modal element
+let modal = document.getElementById("simple-modal");
+//get open modal button
+let modalBtn = document.getElementById("modal-btn");
+//git close button
+let closeBtn = document.getElementsByClassName("close")[0];
+
+//listen for open click
+modalBtn.addEventListener("click", openModal);
+//listen for close click
+closeBtn.addEventListener("click", closeModal);
+//listen for outside click
+window.addEventListener("click", clickOutside);
+
+//prevent refresh on button click
+document.querySelector('#modal-btn').addEventListener('click', function(event) {
+	event.preventDefault();
+});
+
+//function to open modal
+function openModal() {
+	modal.style.display = "block";
+}
+
+//function to close modal
+function closeModal () {
+	modal.style.display = "none";
+}
+
+//function outside click
+function clickOutside(event) {
+	if(event.target == modal) {
+		modal.style.display = "none";
+	}
+}
