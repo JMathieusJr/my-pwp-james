@@ -134,4 +134,6 @@ label {
     width: 30px;
 }
 
-
+.rc-anchor-pt {
+    width: 100px !important;
+}
