@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-    background-color: black;
+    background-color: #ffd8d5;
 }
 
 
@@ -32,7 +32,7 @@ main div :first-child {
 
 /*Mariposa Beauty text*/
 main div div :first-child {
-    color: white;
+    color: black;
     text-align: left;
     margin-left: 1rem;
 }
@@ -64,7 +64,7 @@ main div div :first-child {
 }
 
 #contact-form-only {
-    background-color: darkgrey;
+    background-color: #fff5ea;
     border-radius: 20px;
 }
 
@@ -85,9 +85,8 @@ main div div :first-child {
 }
 
 footer {
-    background-color: black;
+    background-color: #ffd8d5;
     background-size: cover;
-    padding: 10px 0 10px 0;
     display: block;
 }
 
