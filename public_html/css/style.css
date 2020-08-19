@@ -83,6 +83,16 @@ footer {
     display: block;
 }
 
+/*social media links*/
+.icon {
+    padding: 0;
+    margin: 1rem auto 1rem auto;
+}
+
+#modal-btn {
+    padding: 0;
+}
+
 /*modal*/
 .modal {
     display: none;
