@@ -1,21 +1,23 @@
-
+/*body*/
 body {
     background-color: white;
     color: black;
 }
 
+/*navbar*/
 nav {
     background-color: #ffd8d5;
+    border-bottom: solid 1px black;
 }
 
-
-#landing-wrapper {
-    background-image: linear-gradient(rgba(90, 90, 90, 0.5), rgba(90, 90, 90, 0.5)), url("../documentation/images/main-background-cropped.jpg");
+/*jumbotron*/
+#jumbotron {
+    background-image: linear-gradient(rgba(121, 121, 121, 0.2), rgba(121, 121, 121, 0.2)), url("../documentation/images/main-background-cropped.jpg");
     background-position: left 50%;
     background-size: cover;
 }
 
-#landing-wrapper .row {
+#jumbotron .row {
     padding: 4rem 0 4rem 0;
 }
 
@@ -32,21 +34,26 @@ main div :first-child {
 
 /*Mariposa Beauty text*/
 main div div :first-child {
-    color: black;
+    color: #000000;
     text-align: left;
     margin-left: 1rem;
+    font: italic 4em "Fira Sans", serif;
+    font-weight: bolder;
 }
 
-#about-me-row {
-    text-align: center;
-    padding: 3rem 0 3rem 0;
-    background-size: cover;
-}
-
+/*about me*/
 #about-me-container {
-
+    background-color: #fff5ea;
+    padding: 25px 1rem 25px 1rem;
+    margin: 5rem auto 5rem auto;
+    text-align: center;
+    border: solid 1px #ffd8d5;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #cbcbcb;
 }
 
+
+/*portfolio*/
 #portfolio-container {
     background-image:  linear-gradient(rgba(233, 233, 233, 0.3), rgba(233, 233, 233, 0.3)),url("../documentation/images/portfolio-bg.jpg");
     background-size: cover;
@@ -58,47 +65,25 @@ main div div :first-child {
     padding: 1rem 1rem 1rem 1rem;
 }
 
-#contact-form-container {
-    margin: 4rem auto 4rem auto;
-    align-content: center;
-}
-
+/*contact form*/
 #contact-form-only {
     background-color: #fff5ea;
+    border: solid 1px #ffd8d5;
     border-radius: 20px;
-}
-
-.information {
-
-}
-
-.form-label {
-    padding: 8px 0 8px 0;
-    text-align: left;
-}
-
-.form-wrapper {
     padding: 20px 10px 20px 10px;
+    margin: 5rem auto 5rem auto;
+    box-shadow: 3px 5px 5px #cbcbcb;
 }
 
-#form-button {
-}
 
+/*footer*/
 footer {
     background-color: #ffd8d5;
     background-size: cover;
     display: block;
 }
 
-.container {
-    padding: 3em;
-}
-
-label {
-    display: block;
-}
-
-
+/*modal*/
 .modal {
     display: none;
     position: fixed;
@@ -131,8 +116,4 @@ label {
 .close {
     float: right;
     width: 30px;
-}
-
-.rc-anchor-pt {
-    width: 100px !important;
 }
